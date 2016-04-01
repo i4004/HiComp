@@ -5,6 +5,7 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C6A48EEA-6D33-4561-A333-1CCC83B43FE3}"
 	ProjectSection(SolutionItems) = preProject
+		Class1.cs = Class1.cs
 		ComboSelect.tpl = ComboSelect.tpl
 		EmailControl.tpl = EmailControl.tpl
 		Master.tpl = Master.tpl
