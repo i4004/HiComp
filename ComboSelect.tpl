@@ -1,6 +1,6 @@
 <div>
 	<div>Label</div>
 	<div>
-		<select></select>
+		<select {@}></select>
 	</div>
 </div>

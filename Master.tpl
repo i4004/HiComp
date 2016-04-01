@@ -6,6 +6,7 @@
 	<title></title>
 </head>
 <body>
-	<combo-select id="MySelect"></combo-select>
+	<combo-select id="MySelect">asd</combo-select>
+	<email ng-model="{EmailModelID}" required validate-on="dirty"/>
 </body>
 </html>
