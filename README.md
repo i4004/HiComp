@@ -1,2 +1,2 @@
 # HiComp
-Hierarchical components module for AcspNet framework
+HTML Hierarchical Components
