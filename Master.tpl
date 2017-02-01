@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿import "BaseInput"
+import "EMailControl"
+import "ComboSelect"
+
+<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -7,6 +11,7 @@
 </head>
 <body>
 	<combo-select id="MySelect">asd</combo-select>
-	<email ng-model="{EmailModelID}" required validate-on="dirty"/>
+	<email ng-model="{EmailModelID}" required validate-on="dirty" />
+	<base-input ng-model="UserName" />
 </body>
 </html>
