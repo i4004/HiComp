@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CAF2D1C2-C067-433C-B6C0-74E9CF87535D}</ProjectGuid>
+    <ProjectGuid>{0DC69A50-0DB9-4510-A645-1D983FAAAD6C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HiComponent</RootNamespace>
-    <AssemblyName>HiComponent</AssemblyName>
+    <RootNamespace>HiComponent.Examples.Tests</RootNamespace>
+    <AssemblyName>HiComponent.Examples.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -31,10 +31,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="HiTemplate.cs" />
+    <Compile Include="HiComponentTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Simplify.Templates, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Simplify.Templates.1.2.1\lib\net45\Simplify.Templates.dll</HintPath>
       <Private>True</Private>
@@ -45,7 +49,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Controls\BaseInput.tpl" />
+    <None Include="Controls\MessageBox.tpl" />
+    <None Include="Controls\FormTextItem.tpl" />
+    <None Include="EmailControl.tpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Master.tpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HiComponent\HiComponent.csproj">
+      <Project>{caf2d1c2-c067-433c-b6c0-74e9cf87535d}</Project>
+      <Name>HiComponent</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
