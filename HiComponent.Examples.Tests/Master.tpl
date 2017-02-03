@@ -1,5 +1,5 @@
-﻿import "Controls"
-import "EMailControl"
+﻿import Controls
+import EMailControl
 
 <!DOCTYPE html>
 
