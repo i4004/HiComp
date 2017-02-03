@@ -10,8 +10,8 @@ import "EMailControl"
 </head>
 <body>
 	<t:base-input ng-model="UserName" />
-	<t:form-text-item label="{StringTable.Label}" value="{{TestValue}}" />
-	<t:message-box data-value="{{AngularMesageBoxText}}" />
-	<t:email ng-model="{EmailModelID}" required validate-on="dirty" p:name="{StringTable.LabelEmail}" />
+	<t:form-text-item data:label="{StringTable.Label}" data:value="{{TestValue}}" />
+	<t:message-box data:value="{{AngularMesageBoxText}}" />
+	<t:email ng-model="{EmailModelID}" required validate-on="dirty" data:name="{StringTable.LabelEmail}" />
 </body>
 </html>
